@@ -1,0 +1,21 @@
+n  = int(input())
+m = n
+sum1 = 0
+count= 0
+while n>0:
+    rem = n%10
+    sum1 = sum1 + rem
+    n = (n // 10)
+sum2= sum1
+rev = 0
+print(sum2)
+while (sum1>0):
+    rem = sum1%10
+    rev = rem + rev*10
+    sum1 = sum1//10
+print(rev)
+res = rev * sum2
+if res==m :
+    print(m,"is a magic number")
+else :
+    print(m,"is not a magic number")
