@@ -1,0 +1,25 @@
+def gev(n):
+
+    a = 1
+    r = 3
+    t = pow(r,n-1)
+    term = a * t
+    return term
+
+
+
+def god(n):
+    a = 1
+    r = 2
+    t = pow(r,n-1)
+    term = a * t
+    return term
+
+n = int(input())
+
+if (n%2==0):
+    c=gev(n//2)
+    print(c)
+else:
+    c=god((n//2)+1)
+    print(c)
